@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- مربع يمثل الفيديو القصير -->
+    <path
+        android:fillColor="#F15B5B"
+        android:pathData="M4,4L20,4C21.1,4 22,4.9 22,6L22,18C22,19.1 21.1,20 20,20L4,20C2.9,20 2,19.1 2,18L2,6C2,4.9 2.9,4 4,4Z"
+        android:fillType="evenOdd" />
+    
+    <!-- رمز التشغيل الأبيض -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M9,7L17,12L9,17Z" />
+</vector>

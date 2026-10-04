@@ -3,8 +3,7 @@
           xmlns:tools="http://schemas.android.com/tools"
           tools:ignore="MissingLeanbackLauncher">
 
-    <!-- Shield على Android 11 لا يعمل مصحح التعرف على الكلام؟ -->
-    <!-- https://stackoverflow.com/questions/64319117/speechrecognizer-not-available-when-targeting-android-11 -->
+    <!-- التعرف على الكلام على Android 11 -->
     <queries>
         <intent>
             <action android:name="android.speech.RecognitionService" />
@@ -27,14 +26,10 @@
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />
-    <!-- NEWTUBE(phone-only): تم الاحتفاظ به كهدف tools:replace لـ stmobile overlay
-         (الذي يفرض required=false). القيمة هنا بالفعل false. -->
     <uses-feature
         android:name="android.software.leanback"
         android:required="false" />
 
-    <!-- android:usesCleartextTraffic - السماح بحركة HTTP -->
-    <!-- خيارات cleartext بديلة: https://stackoverflow.com/questions/45940861/android-8-cleartext-http-traffic-not-permitted -->
     <application
         android:name="com.liskovsoft.smartyoutubetv2.tv.ui.main.MainApplication"
         android:usesCleartextTraffic="true"
@@ -49,8 +44,6 @@
         tools:replace="android:theme"
         tools:ignore="GoogleAppIndexingWarning,LockedOrientationActivity,UnusedAttribute,DiscouragedApi">
 
-        <!-- اسم نشاط هذا يُستخدم داخل قنوات atv -->
-        <!-- معلومات أخرى: com.liskovsoft.leanbackassistant.utils.AppUtil -->
         <activity
             android:name="com.liskovsoft.smartyoutubetv2.tv.ui.main.SplashActivity"
             android:exported="true"
@@ -59,20 +52,11 @@
             android:screenOrientation="unspecified">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <!-- موجه نية خارجي (روابط المشاهدة، المشاركات، vnd.youtube). يعيش في مهمته الخاصة
-             يزيل نظام Android تكرار الإطلاق الذي يساوي نية الفلترة لمهمة recents الجذر
-             إلى مهمة عادية-إلى-الأمام بدون رد اتصال التطبيق، لذلك إعادة فتح نفس URL (الضغط الثاني،
-             الإشعار) كان صامتًا بدون عملية - والسجلات المهام الميتة تبقى بعد الإجبار على الإيقاف،
-             لذا استمرت في المطابقة إلى الأبد. نشاط launchMode قياسي مع صلاحيته الخاصة يحصل دائمًا على onCreate؛
-             يوجه (سلسلة SplashPresenter)، ينهي، والمهمة الفارغة excludeFromRecents تتبخر،
-             دون ترك سجل للقياس مقابل.
-             ViewManager يضيف FLAG_ACTIVITY_NEW_TASK، لذا الآراء الموجهة تنتقل إلى المهمة الرئيسية. -->
         <activity
             android:name="com.liskovsoft.smartyoutubetv2.tv.ui.main.IntentRouterActivity"
             android:exported="true"
@@ -81,15 +65,12 @@
             android:noHistory="true"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|layoutDirection"
             android:screenOrientation="unspecified">
-            <!-- معالجة النيات من التطبيقات الأخرى -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <action android:name="android.media.action.MEDIA_PLAY_FROM_SEARCH"/>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
-
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-
                 <data android:scheme="http"/>
                 <data android:scheme="https"/>
                 <data android:host="youtube.com"/>
@@ -104,10 +85,8 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <action android:name="android.media.action.MEDIA_PLAY_FROM_SEARCH"/>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
-
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-
                 <data android:scheme="vnd.youtube"/>
                 <data android:scheme="vnd.youtube.launch"/>
             </intent-filter>

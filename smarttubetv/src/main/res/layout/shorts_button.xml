@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <!-- زر Shorts الرئيسي -->
+    <Button
+        android:id="@+id/btn_shorts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/header_shorts"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#F15B5B"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="4dp" />
+
+    <!-- أيقونة Shorts -->
+    <ImageView
+        android:id="@+id/icon_shorts"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/icon_shorts"
+        android:contentDescription="@string/header_shorts"
+        android:tint="#F15B5B" />
+
+</LinearLayout>

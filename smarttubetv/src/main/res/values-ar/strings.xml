@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- اسم التطبيق -->
+    <string name="app_name">زي تيوب</string>
+    <string name="browse_title">زي تيوب</string>
+    
+    <!-- الملاحة الرئيسية -->
+    <string name="header_home">الرئيسية</string>
+    <string name="header_subscriptions">الاشتراكات</string>
+    <string name="header_history">السجل</string>
+    <string name="header_music">الموسيقى</string>
+    <string name="header_news">الأخبار</string>
+    <string name="header_gaming">الألعاب</string>
+    <string name="header_playlists">قوائم التشغيل</string>
+    <string name="header_shorts">Shorts</string>
+    <string name="header_settings">الإعدادات</string>
+    
+    <!-- البحث -->
+    <string name="title_search">بحث</string>
+    <string name="search_hint">ابحث عن الفيديوهات</string>
+    <string name="search_results">نتائج البحث عن '%1$s'</string>
+    <string name="no_search_results">لا توجد نتائج عن '%1$s'</string>
+    
+    <!-- الفيديوهات -->
+    <string name="related_movies">مقاطع ذات صلة</string>
+    <string name="popular_header">الفيديوهات الشائعة</string>
+    <string name="vertical_grid_title">شبكة الفيديو</string>
+    <string name="more_samples">المزيد</string>
+    <string name="grid_view">عرض الشبكة</string>
+    
+    <!-- الإجراءات -->
+    <string name="action_signin">تسجيل الدخول</string>
+    <string name="action_search">بحث</string>
+    <string name="action_subscribe">اشتراك</string>
+    <string name="action_like">أعجبني</string>
+    <string name="action_dislike">لا يعجبني</string>
+    <string name="action_playlist_add">إضافة إلى قائمة التشغيل</string>
+    <string name="action_channel">فتح القناة</string>
+    
+    <!-- الرسائل والأخطاء -->
+    <string name="error_fragment">خطأ</string>
+    <string name="error_fragment_message">حدث خطأ</string>
+    <string name="dismiss_error">إغلاق</string>
+    <string name="videos_loading_error">فشل تحميل الفيديوهات. تحقق من الاتصال.</string>
+    <string name="error_message_network_needed">تحتاج إلى اتصال إنترنت للقيام بذلك</string>
+    
+    <!-- الإعدادات -->
+    <string name="pref_title_settings">إعدادات التطبيق</string>
+    <string name="settings_accounts">الحسابات</string>
+    <string name="settings_left_panel">تعديل الفئات</string>
+    <string name="settings_themes">المظاهر</string>
+    <string name="settings_player">إعدادات المشغل</string>
+    <string name="settings_language">اللغة</string>
+    <string name="settings_about">حول التطبيق</string>
+    <string name="settings_main_ui">واجهة المستخدم</string>
+    
+    <!-- التشغيل -->
+    <string name="playback_settings">إعدادات التشغيل</string>
+    <string name="video_speed">سرعة الفيديو</string>
+    <string name="subtitle_category_title">الترجمات</string>
+    <string name="video_quality">جودة الفيديو</string>
+    <string name="resolution_switch">تغيير الدقة</string>
+    
+    <!-- الأخرى -->
+    <string name="shorts_button">عرض Shorts</string>
+    <string name="shorts_description">فيديوهات قصيرة</string>
+    <string name="no_title">بدون عنوان</string>
+    <string name="title_oops">آه!</string>
+    <string name="message_try_again">جرب مرة أخرى؟</string>
+</resources>

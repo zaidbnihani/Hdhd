@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- الخلفية الحمراء الرئيسية بزوايا مدورة -->
+    <path
+        android:fillColor="#F15B5B"
+        android:pathData="M20,14C11,14 4,21 4,30L4,78C4,87 11,94 20,94L88,94C97,94 104,87 104,78L104,30C104,21 97,14 88,14L20,14Z" />
+
+    <!-- الحرف Z الأبيض الكبير والجريء -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M25,25L80,25L30,75L80,75L25,25Z"
+        android:strokeWidth="3"
+        android:strokeLineCap="square" />
+
+    <!-- رمز التشغيل الأبيض (مثلث play) داخل الحرف Z -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M52,42L68,54L52,66Z" />
+
+</vector>

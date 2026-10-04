@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- جميع الألوان واحدة بغض النظر عن اللغة -->
+    <color name="primary">#F15B5B</color>
+    <color name="primary_dark">#D94B4B</color>
+    <color name="primary_light">#FFD9D9</color>
+    <color name="accent">#FFB347</color>
+    <color name="fastlane_background">#F15B5B</color>
+    <color name="fastlane_background_dark">#D94B4B</color>
+    <color name="card_default_background">#F15B5B</color>
+    <color name="card_default_text">#FFFFFF</color>
+</resources>

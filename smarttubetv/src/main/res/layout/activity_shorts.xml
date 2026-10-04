@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#181818">
+
+    <!-- شريط الرأس -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F15B5B"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <!-- زر الرجوع -->
+            <Button
+                android:id="@+id/btn_back_shorts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="← الرجوع"
+                android:textColor="#F15B5B"
+                android:textStyle="bold"
+                android:backgroundTint="#FFFFFF"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp" />
+
+            <!-- العنوان -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/header_shorts"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center" />
+
+            <!-- أيقونة Shorts -->
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/icon_shorts"
+                android:contentDescription="@string/header_shorts"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- شبكة الفيديوهات القصيرة -->
+    <GridView
+        android:id="@+id/shorts_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp"
+        android:padding="16dp"
+        android:columnWidth="200dp"
+        android:stretchMode="columnWidth" />
+
+</LinearLayout>
